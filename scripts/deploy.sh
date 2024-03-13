@@ -81,6 +81,10 @@ if [ ! -z "$UI_LOGO" ]; then
   echo "VITE_UI_LOGO=$UI_LOGO" >>$ENV_FILENAME
 fi
 
+if [ ! -z "$UI_LOGO" ]; then
+  echo "VITE_UI_LOGO=$UI_LOGO" >>$ENV_FILENAME
+fi
+
 echo "Generated .env file:"
 echo "$(cat /app/.env)"
 
